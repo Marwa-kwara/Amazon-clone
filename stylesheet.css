@@ -26,14 +26,6 @@ body{
     font-family: text-font;
     padding: 4px;
   }
-  /*.logo-img {
-width: 300px;
-float: left;
-margin-left: 10px;
-border: 1px solid;
-
-
-  }*/
 
    #header-bottom  {
     display: flex;
@@ -220,4 +212,19 @@ border: 1px solid;
   .products{
     display: flex;
     justify-content: space-between;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
   }
+  .products img:hover {
+    transform: scale(1.1);
+    transition: all 0.7s ease;
+  }
+  h2{
+  text-align: left;
+   font-size: 35px;
+   font-family: text-font;
+   color: rgb(77, 75, 68);
+   margin: 10px;
+   padding: 10px;
+ }
