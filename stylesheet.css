@@ -22,9 +22,9 @@ body{
 
   header a {
     text-decoration: none;
-    color: rgb(77, 75, 68);
-    font-family: text-font;
-    padding: 4px;
+    color:beige;
+    text-shadow:5px 5px 9px gray;
+    padding: 5px;
   }
 
    #header-bottom  {
@@ -62,7 +62,7 @@ body{
 
 /*first section*/
 
-.under-9-99-section{
+.first-section{
   display: grid;
   grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
   grid-template-rows: auto ;
@@ -70,7 +70,7 @@ body{
  justify-items: center;
  margin-top: 100px;
   }
-  .under-9-99-logo{
+  .logo{
   grid-column-start:2 ;
   grid-column-end:4;
   grid-row-start:1;
@@ -80,49 +80,49 @@ body{
 
   
 }
-  .under-9-99-img-1{
+.first-section-img-1{
   grid-column-start:1 ;
   grid-column-end:2;
   grid-row-start:1;
   grid-row-end: 2;  
   }
-  .under-9-99-img-2{
+  .first-section-img-2{
     grid-column-start:1;
     grid-column-end:2;
     grid-row-start:2;
     grid-row-end: 3;  
   }
-  .under-9-99-img-3{
+  .first-section-img-3{
     grid-column-start:1 ;
     grid-column-end:2;
     grid-row-start:3;
     grid-row-end: 4;  
   }
-  .under-9-99-img-4{
+  .first-section-img-4{
     grid-column-start:2 ;
     grid-column-end:3 ;
     grid-row-start:3;
     grid-row-end: 4;  
   }
-  .under-9-99-img-5{
+  .first-section-img-5{
     grid-column-start:3;
     grid-column-end:4 ;
     grid-row-start:3;
     grid-row-end: 4;  
   }
-  .under-9-99-img-6{
+  .first-section-img-6{
     grid-column-start:4;
     grid-column-end:5 ;
     grid-row-start:3;
     grid-row-end: 4;  
   }
-  .under-9-99-img-7{
+  .first-section-img-7{
     grid-column-start:4 ;
     grid-column-end:5;
     grid-row-start:2;
     grid-row-end: 3;  
   }
-  .under-9-99-img-8{
+  .first-section-img-8{
     grid-column-start:4 ;
     grid-column-end:5;
     grid-row-start:1;
@@ -137,8 +137,6 @@ body{
 /*--black-friday-section--*/
 
 .body-sec {
-  margin-left:3%;
-  margin-right:3%;
   margin-top:1%;
   display: flex;
   justify-content: center;
@@ -228,3 +226,53 @@ body{
    margin: 10px;
    padding: 10px;
  }
+
+.footer{
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color:   #FF9900 ;
+width:100%;
+}
+
+footer img {
+width: 300px;
+background-color: beige;
+
+}
+p{
+  padding: 20px;
+  color: beige;
+  font-family: text-font;
+  text-shadow:5px 5px 9px gray;
+  font-size: 20px;
+}
+
+/*Footer style ends here*/
+
+/*@media Rule*/
+@media only screen and (max-width: 600px){
+  .first-section,.items-container,.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+  }
+  
+  h1{font-size: 20px;}
+
+  .products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+  }
+}
+  @media all and (min-width: 600px) and (max-width: 1024px){
+    .firet-section{
+    width: 300px;
+    }
+  .products{ 
+    width: 200px;
+  }
+}
